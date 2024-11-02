@@ -1,0 +1,53 @@
+﻿<Page x:Class="Control7.View.Pages.MenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Control7.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="350"
+      Title="MenuPage">
+
+    <Grid>
+        <Image Source="/Resources/SK2.png" Stretch="Fill" />
+
+        <StackPanel VerticalAlignment="Center" >
+            <TextBlock Height="100"    >
+                <Hyperlink Name="AddManufacturedHL" FontSize="25"  Click="AddManufacturedHL_Click" Foreground="Black">
+                <Run Text="Добавить производителя" />
+                </Hyperlink>
+            </TextBlock>
+
+            <TextBlock Height="100">
+                <Hyperlink Name="AddMaterialHL" FontSize="25" Click="AddMaterialHL_Click"   Foreground="Black">
+                <Run Text="Добавить товар"/>
+                </Hyperlink>
+            </TextBlock>
+            <TextBlock Height="100">
+                <Hyperlink Name="AddEmployeeHL" FontSize="25" Click="AddEmployeeHL_Click"  Foreground="Black">
+                <Run Text="Добавить сотрудника"/>
+                </Hyperlink>
+            </TextBlock>
+
+            <TextBlock Height="100">
+                <Hyperlink Name="Acounting" FontSize="25" Click="Acounting_Click"  Foreground="Black">
+                <Run Text="Ведение учета"/>
+                </Hyperlink>
+            </TextBlock>
+
+            <TextBlock Height="100">
+                <Hyperlink Name="ReportEmpoyeeHL" FontSize="25" Click="ReportEmpoyeeHL_Click"  Foreground="Black">
+                <Run Text="Отчет по сотрудникам"/>
+                </Hyperlink>
+            </TextBlock>
+
+            <TextBlock Height="100">
+                <Hyperlink Name="ReportPeriodHL" FontSize="25" Click="ReportPeriodHL_Click"  Foreground="Black">
+                <Run Text="Отчет по периоду"/>
+                </Hyperlink>
+            </TextBlock>
+
+
+        </StackPanel>
+    </Grid>
+</Page>
